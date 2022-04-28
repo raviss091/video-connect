@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;
+    border-style : solid;
+    margin-left: 1rem;
+}
+
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.main_left{
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+}
+
+/* .main_right{
+    flex: 0.2;
+} */
+
+.main_videos{
+    flex-grow: 1;
+    background-color : #EFFFFD;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.main_controls{
+    display: flex;
+    background-color : #4D96FF;
+    color: whitesmoke;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.main_controls_block{
+    display: flex;
+    /* margin-left : 56rem; */
+}
+
+.main_controls_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer; 
+}
+
+.main_controls_button i{
+    font-size: 24px;
+}
+
+.main_controls_button:hover{
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.leave_meeting{
+    color: #EB534B;
+}
+
+.main_right{
+    display: none;
+    flex-direction: column;
+    background-color : #F7F7F7;
+    border-left: 1px solid #3D3D42;
+}
+ 
+.main_header{
+    /* color: #0000; */
+    text-align: center;
+    border-style : solid solid double solid;
+}
+
+h4 {
+    color: #000;
+}
+
+.main_chat_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+    border-style : none solid none solid;
+}
+
+.main_message_container{
+    padding: 22px 12px;
+    display: flex;
+    margin-bottom: 0rem;
+    border-style : double solid solid solid;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.main_message_container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: black; 
+}
+
+.messages{
+    color: black;
+    list-style: none;
+}
+
+.unmute, .stop{
+    color: #cc3833;
+}
+
